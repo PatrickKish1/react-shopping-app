@@ -1,38 +1,307 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f4f8;
+  padding: 10px;
+}
+
+.main {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1440px;
+}
+
+.items-container {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  flex: 1;
+  min-width: 280px; /* Adjust width of items container */
+  max-width: 700px; /* Adjust max-width of items container */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.items-container h3 {
+  font-weight: bold;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+  color: #333333;
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  margin: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  width: calc(33.33% - 20px); /* Adjust width for three items per row */
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  height: 200px; /* Adjust height as needed */
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.card-title {
+  color: #007bff;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  color: #333333;
+  font-size: 1rem;
+  text-align: center; /* Center text */
+}
+
+.add-to-cart {
+  background-color: #28a745;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: block;
+  width: 100%; /* Make button full width */
+  border-radius: 5px; /* Border radius added */
+}
+
+.add-to-cart:hover {
+  background-color: #218838;
+}
+
+.cart-container {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  flex: 1;
+  min-width: 300px; /* Adjust width of cart container */
+  max-width: 900px; /* Increased max-width for wider cart */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cart-container h4 {
+  font-weight: bold;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+  color: #333333;
+}
+
+.cart {
+  overflow-y: auto;
+  max-height: 60vh;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f8f9fa; /* New background color */
+  border: 1px solid #e0e0e0;
+  border-radius: 5px; /* Changed border-radius */
+}
+
+.cart-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.cart-item-details {
+  flex: 1;
+  margin-left: 10px; /* Added margin-left for spacing */
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+  }
+  
+  .quantity-button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0 5px; /* Adjust margin between buttons */
+  }
+  
+  .quantity-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .quantity .count {
+    font-size: 1rem;
+    margin: 0 5px; /* Adjust spacing between buttons and count */
+  }
+  
+
+.quantity span {
+  font-size: 1rem;
+  margin: 0 10px;
+}
+
+.check-out {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.check-out p {
+  font-weight: bold;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 10px 0;
+}
+
+.check-out span {
+  font-weight: 100;
+  color: #333333;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.buttons button {
+  width: 48%; /* Adjust button width */
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  background-color: transparent;
+  color: #333333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.buttons button:nth-child(1) {
+    background-color: #dc3545; /* Current background color */
+    color: #ffffff; /* Text color */
+  }
+  
+  .buttons button:nth-child(1):hover {
+    background-color: #bd2130; /* Hover background color */
+  }
+
+
+
+
+  .buttons button:nth-child(2) {
+    background-color: #26e36e; /* Current background color */
+    color: #ffffff; /* Text color */
+  }
+  
+  .buttons button:nth-child(2):hover {
+    background-color: #bd2130; /* Hover background color */
+  }
+  
+
+
+
+.buttons button:hover {
+  opacity: 0.8;
+}
+
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #f8f9fa; /* New background color */
+  border: 1px solid #e0e0e0;
+  border-radius: 5px; /* Added border-radius */
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 8px; /* Added box-shadow */
+}
+
+.list-group-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.list-group-item div {
+  flex: 1;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+
+.list-group-item div h5 {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.list-group-item div h6 {
+  margin-top: 0.5rem;
+  font-size: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.list-group-item div button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: #007bff;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.list-group-item div button:hover {
+  background-color: #0056b3;
 }
