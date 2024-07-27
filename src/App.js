@@ -14,15 +14,7 @@ const items = [
       id: 2,
       name: 'Keyboard',
       image: 'https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8a2V5Ym9hcmR8ZW58MHx8MHx8fDA%3D',
-<<<<<<< HEAD
-<<<<<<< HEAD
       price: 130
-=======
-      price: 150
->>>>>>> 6af398f ('Update')
-=======
-      price: 130
->>>>>>> a6263fa (Updating files)
   },
   {
       id: 3,
@@ -62,15 +54,7 @@ const items = [
   },
   {
       id: 9,
-<<<<<<< HEAD
-<<<<<<< HEAD
       name: 'Web Dev E-Book',
-=======
-      name: 'Web Development E-Book',
->>>>>>> 6af398f ('Update')
-=======
-      name: 'Web Dev E-Book',
->>>>>>> a6263fa (Updating files)
       image: 'https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       price: 10
   },
@@ -138,7 +122,7 @@ function App() {
     <div className="main row">
       <div className="container1 col-8">
         <div className="items-container">
-          <h3>Shopping Cart App</h3>
+          <h3>Segnom Shop</h3>
           <div className="items">
             {items.map((item) => (
               <ItemCard key={item.id} item={item} addToCart={addToCart} />
