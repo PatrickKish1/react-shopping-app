@@ -15,10 +15,14 @@ const items = [
       name: 'Keyboard',
       image: 'https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8a2V5Ym9hcmR8ZW58MHx8MHx8fDA%3D',
 <<<<<<< HEAD
+<<<<<<< HEAD
       price: 130
 =======
       price: 150
 >>>>>>> 6af398f ('Update')
+=======
+      price: 130
+>>>>>>> a6263fa (Updating files)
   },
   {
       id: 3,
@@ -59,10 +63,14 @@ const items = [
   {
       id: 9,
 <<<<<<< HEAD
+<<<<<<< HEAD
       name: 'Web Dev E-Book',
 =======
       name: 'Web Development E-Book',
 >>>>>>> 6af398f ('Update')
+=======
+      name: 'Web Dev E-Book',
+>>>>>>> a6263fa (Updating files)
       image: 'https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       price: 10
   },
@@ -83,6 +91,18 @@ const items = [
       name: 'Python Book',
       image: 'https://m.media-amazon.com/images/I/51M3xZKX9hL._AC_UF1000,1000_QL80_.jpg',
       price: 100 
+  },
+  {
+    id: 13,
+    name: 'HNG Premium',
+    image: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.licdn.com%2Fdms%2Fimage%2FC4E12AQHGbhHB4WKP6g%2Farticle-cover_image-shrink_600_2000%2F0%2F1629155784117%3Fe%3D2147483647%26v%3Dbeta%26t%3D2e9iSEW6YxFxEEo3tZlI4Sfa4hVMM0H1txGrfXU7pWQ&f=1&nofb=1&ipt=0b05eade63926b6726071cfcbfab62ee8312ee2cc20a9f31ca2e6bcda6f06c28&ipo=images',
+    price: 0
+  },
+  {
+    id: 14,
+    name: 'HNG Certificate',
+    image: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.printablesample.com%2Fwp-content%2Fuploads%2F2017%2F01%2FInternship-Completion-Certificate-Template-1.jpg&f=1&nofb=1&ipt=cc422a9394379401e54fb982e81a0466e162ce4c66d4b22989917e297497c4fb&ipo=images',
+    price: '30B'
   }
 ];
 
